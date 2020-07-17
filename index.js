@@ -233,9 +233,12 @@ console.log(correction(artists, 9, "name", "Vincent Van Gogh"));
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+    let str = `The artist at index ${array[index].id} is ${array[index].name}.`;
+    return str;
   }
   
+  console.log(getArtistByIndex(artists, 4))
+
   /**
 
 
