@@ -248,6 +248,7 @@ function get20s(){
   const artistList = [];
   for (let i = 0; i < artists.length; i++) {
       const dates = artists[i].years.split(" - ")
+      console.log(dates)
       if(dates[0] >= "1900" && dates[1] <= "2000") {
         artistList.push(artists[i].name)
       }
