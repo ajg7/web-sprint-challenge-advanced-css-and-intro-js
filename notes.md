@@ -8,3 +8,7 @@ header img needs to go to both sides of screen
 
 Two div elements need to be in a column
     artist container, flex-direction: column
+
+
+
+
