@@ -237,7 +237,7 @@ function getArtistByIndex(array, index) {
     return str;
   }
   
-  console.log(getArtistByIndex(artists, 4))
+  console.log(getArtistByIndex(artists, 4));
 
   /**
 
@@ -261,11 +261,15 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(objs, index) {
+    const removedElement = objs.splice(index, 1);
+    return removedElement;
   }
   
- 
+ console.log(removeArtist(artists, 0));
+ console.log(removeArtist(artists, 7));
+ console.log(removeArtist(artists, 2));
+ console.log(artists);
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
