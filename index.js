@@ -261,6 +261,7 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
+const originalCopy = [...artists];
 function removeArtist(objs, index) {
     const removedElement = objs.splice(index, 1);
     return removedElement;
@@ -270,7 +271,7 @@ function removeArtist(objs, index) {
  console.log(removeArtist(artists, 7));
  console.log(removeArtist(artists, 2));
  console.log(artists);
-
+ console.log(originalCopy);
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
@@ -284,11 +285,21 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+function addArtist(objs){
+    const myObject = {
+      id: 20,
+      name: "AJ Gebara", 
+      years: 1992 - "current day",
+      genre: "Web Design", 
+      nationality: "American",
+      bio: "Pokem ipsum dolor sit amet Exeggutor Kecleon Wing Attack Doduo Red Unown. Sunt in culpa Drilbur Calcium Hoenn Shieldon Wynaut Charizard. "
+    }
+    objs.push(myObject);
+    return myObject;
   }
+
+  console.log(addArtist(originalCopy));
+  console.log(originalCopy);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 

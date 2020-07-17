@@ -11,4 +11,6 @@ Two div elements need to be in a column
 
 
 
-
+Task 6
+define object
+object.push(the array)
